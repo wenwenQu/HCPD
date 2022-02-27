@@ -1,0 +1,94 @@
+Paper Title: Efficient Computation of Cohesive Subgraphs in Uncertain Bipartite Graphs
+
+1. Overall evaluation *   (visible to authors after notification, visible to other reviewers, visible to meta-reviewers)
+	Weak accepted
+ 
+2. Reviewer's confidence *   (visible to other reviewers, visible to meta-reviewers)
+	Knowledgeable
+ 
+3. Relevance to ICDE *   (visible to authors during feedback, visible to authors after notification, visible to other reviewers, visible to meta-reviewers)
+	 Relevant
+
+4. Importance: select all that apply: *   (visible to other reviewers, visible to meta-reviewers)
+	 ICDE attendees will learn something interesting from the paper
+
+5. Novelty *   (visible to authors during feedback, visible to authors after notification, visible to other reviewers, visible to meta-reviewers)
+	Novel application of existing solution to a new problem.
+ 
+6. Summary of contribution (in a few sentences) *   (visible to authors during feedback, visible to authors after notification, visible to other reviewers, visible to meta-reviewers)
+	
+	This paper proposes a cohesive subgraph model, (α,β,η)-core, on uncertain bipartite graphs. The model adopts the concept of “η-degree” to measure the vertex engagement level of uncertain bipartite graphs. Since the online computation algorithm is time-consuming, the authors propose a probability-aware index to supports efficient query processing and devise two efficient index construction algorithms that can build the probability-aware index in bottom-up and top-down manners. The latter is more efficient. Extensive experiments validate the effectiveness and efficiency.
+
+7. Describe in detail all strong points, labeled S1, S2, S3, etc. *   (visible to authors during feedback, visible to authors after notification, visible to other reviewers, visible to meta-reviewers)
+
+S1. A cohesive subgraph model, (α,β,η)-core, is proposed for uncertain bipartite graphs.
+S2. A probability-aware index is proposed to accerlate the query for (α,β,η)-core. The index has low space complexity compared to full index.
+S3. This paper devises efficient index construction algorithms that can build the probability-aware index in bottom-up and top-down manners. The latter is more efficient.
+
+8. Describe in detail all opportunities for improvement, labeled O1, O2, O3, etc. *   (visible to authors during feedback, visible to authors after notification, visible to other reviewers, visible to meta-reviewers)
+
+O1. I am curious about how the index construction time and query time will change as the size of the dataset increases. Is it a linear increase or other performance? Please add experiments related to scalability.
+
+O2. In the datasets used in experiments, the weight of the edge are randomly generated. It can not reflect the performance of the algorithm in the real world. Please do more experiments on real uncertain graph.
+
+O3. In the case study, DBLP is used to show (α,β,η)-core model. Please add a figure of cohesive subgraph for certain query to better show the results. Please refer to the case study in http://dx.doi.org/10.1145/2463676.2463722.
+
+O4. In Figure 7, The construction time of AM, WC and DB are time out and not reported, but why Figure 8 still reports the index size for them? 
+
+O5. Please modify the symbols in the paper to maintain consistency. For example, in Table 1, the author uses deg_η⁡(u,G) to represent degrees, but uses abbreviations, deg_η⁡(u), in Algorithm 1 without additional explanation. Please use G not G*(which is never used later) in Page 3 to denote the deterministic bipartite graph. Please consider add Deg(u, G) in table 1 and keep the first letter capitalized always.
+
+O6. In Page 8, in the third paragraph of right column, the authors said “We start from η_1=1 To build the η_1-index” but in Example 5 the authors  said “we first initialize η_1 to 0”. are there any errors in presentation.
+
+O7. In Page 7, in the last paragraph of left column,  the authors use “T(η_2 )<1/2 T(η_2)” to find the smallest η_2, is the second η_2 wrong?
+
+
+9. Please rank the three most critical strong points and/or opportunities for improvement that led to your overall evaluation rating, e.g., "{S1, O7, O4}" *   (visible to authors during feedback, visible to authors after notification, visible to other reviewers, visible to meta-reviewers)
+
+	{S2,O1,O2}
+
+10. Inclusive writing: does the paper follow the ICDE inclusive writing guidelines with respect to language, examples, figures? Please provide suggestions to the authors on how to improve the writing of the paper according to the guidelines. *   (visible to authors during feedback, visible to authors after notification, visible to other reviewers, visible to meta-reviewers)
+
+	The paper follow the ICDE inclusive writing guidelines with respect to language, examples, figures
+
+11. Availability:
+We have asked authors of all papers to make their code, data, scripts, and notebooks available if this is possible. You can find this information in the summary of the paper on CMT.
+*   (visible to authors during feedback, visible to other reviewers, visible to meta-reviewers)
+	Yes, the code are availability.
+
+12. Additional remarks. Use this field to describe remarks that are not critical strong points or opportunities for improvement, e.g., to highlight typos, formatting problems, or minor technical issues.   (visible to authors during feedback, visible to authors after notification, visible to other reviewers, visible to meta-reviewers)
+
+1. Page 2, left column, the first paragraph, the 7th line, compute->computing
+2. Page 2, left column, the second paragraph, the 8th line, probability->probabilities
+3. Page 2, right column, the second paragraph, the 4th line, do not -> that do not
+4. Page 3, left column, the first paragraph, the first line, need not to be -> need not be
+5. Page 4, Equation 5, add the closing parenthesis
+6. Page 6, right column, the first paragraph, the 3rd line, an overview -> an overview of
+7. Page 7, left column, the third paragraph, the 2nd line, is equivalent to do-> is equivalent to doing 
+8. Page 7, right column, Lemma 4, the 4th line, satisfy-> satisfies
+9. Page 8, left column, the first paragraph, the 9th line, contains -> contain
+10. Page 10, right column, the third paragraph, the 4th line, Moives -> Movies
+11. Page 11, right column, the second paragraph, the 5th line, show -> shown
+12. Page 11, right column, the second paragraph, the 5th line, build -> built
+13. Page 12, left column, the second paragraph, the 3rd line, it’s -> its
+14. The formats of some references are wrong, for example, in [10] the last name and first name are reversed.
+
+
+13. Response to author feedback (please answer "N/A" if author feedback was not provided)   (visible to authors after notification, visible to other reviewers, visible to meta-reviewers)
+ 
+8000 characters left
+14. List required changes for a revision, if appropriate, by identifying subset of previously specified opportunities for improvement (e.g., O1, O3, O6).   (visible to authors after notification, visible to other reviewers, visible to meta-reviewers)
+ 
+8000 characters left
+15. Confidential comments for the program committee   (visible to other reviewers, visible to meta-reviewers)
+ 
+8000 characters left
+16. Comments on the revised paper (if appropriate)   (visible to authors after notification, visible to other reviewers, visible to meta-reviewers)
+ 
+8000 characters left
+17. Recommended decision for the revised paper (if appropriate)   (visible to authors after notification, visible to other reviewers, visible to meta-reviewers)
+ 
+18. Name and affiliation of external expert reviewers who helped you with your review (if applicable)   (visible to other reviewers, visible to meta-reviewers)
+ 
+
+
+

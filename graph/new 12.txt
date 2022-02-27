@@ -1,0 +1,17 @@
+数据集
+UK-2007 3.74B 105.9M powerlaw
+Twitter 1.46B 41.6M Heavy-tailed
+UK-2002 298.1M 18.5M powerlaw
+UK-2005 936M 40M 
+Wiki 5.7M 130M
+LJourney 5.4M 79M
+Google Web 0.9M 5.1M
+
+环境配置
+48×（8core E5,16GB, 250GB SSD） for big graph
+
+实验：
+Computation Performance compare with powerlaw and topoX
+Replication Factor
+Load Balance
+Partitioning Cost
