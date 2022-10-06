@@ -29,7 +29,9 @@ Powergraph is builded on mpi. So we can use mpi commands to run the graph algori
 `mpirun -np 4 ./pagerank --format=snap --graph=/your/graph/file --graph_opts ingress=matrix_block,threshold={t},etheta=2`
 
 For more use of powergraph, please refer:
+
 [1] https://github.com/jegonzal/PowerGraph/blob/master/README.md
+
 [2] https://github.com/jegonzal/PowerGraph/blob/master/TUTORIALS.md
 
 
