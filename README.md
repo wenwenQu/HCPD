@@ -8,17 +8,19 @@ HCPD is a hybrid graph partitioning algorithm that is implemented into GraphLab 
 The build process of HCPD is exactly the same as PowerGraph.
 
 First, install all Dependencies (Ubuntu)
+
 `sudo apt-get update`
 
 `sudo apt-get install gcc g++ build-essential libopenmpi-dev openmpi-bin default-jdk cmake zlib1g-dev git`
 
 Compiling and Running:
+
 `./configure`
 
 `make -j4`
 
 
-#How to run it
+# How to run it
 
 Powergraph is builded on mpi. So we can use mpi commands to run the graph algorithm. For PageRank:
 
